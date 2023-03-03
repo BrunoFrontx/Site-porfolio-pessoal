@@ -1,0 +1,40 @@
+:root{
+    --color-fundo: #09090B;
+    --color-text: #F9F9F9;
+    --font-size : 25px;
+}
+*{
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: var(--color-fundo);
+}
+.container_cabeçalho{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.container{
+    margin-top: 22px;
+}
+.logo{
+    width: 150px;
+  
+}
+.container_menu{
+    display: flex;
+    list-style: none;
+    align-items: center;
+   
+}
+.container_menu li {
+     margin-right: 30px;
+}
+.container_menu li a {
+    font-size:25px;
+    font-family: 'Oswald', sans-serif;
+    color: var(--color-text);
+    text-decoration: none;
+}

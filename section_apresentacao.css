@@ -1,0 +1,96 @@
+:root{
+    --color-fundo: #09090B;
+    --color-text: #F9F9F9;
+    --font-size : 20px;
+}
+.container_apresentaçao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+}
+.container_imagem_fundo{
+    margin-top: 10%;
+    
+}
+.container_imagem_fundo img {
+    opacity: 10%;
+}
+.container_text_apresentaçao{
+    position: absolute;
+}
+
+
+
+.name{
+    color: var(--color-text);
+    margin-top: 250px;
+    font-size: 150px;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 0px 0px 10px rgb(14, 14, 14);
+} 
+.name span {
+    color: aqua;
+}
+
+.container_text_apresentaçao .profissao{
+    color: var(--color-text);
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-text);
+    margin-bottom: 20px;
+    text-shadow: 0px 0px 10px rgb(14, 14, 14);
+}
+.button_github, .button_contato{
+    width: 150px;
+    padding: 6px;
+}
+.button_github a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+    font-family: 'Oswald', sans-serif; 
+    
+}
+.button_contato a {
+    font-size: 22px;
+    color: black;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+}
+@keyframes bordar-button {
+    0% {
+        border-top: solid 3.5px rgb(255, 255, 255);
+ 
+    }
+    25% {
+    
+        border-right: solid 3.5px rgb(255, 255, 255);
+ 
+       
+        
+    }
+    50% {
+       
+        border-bottom:  solid 3.5px rgb(255, 255, 255);
+ 
+    }
+    75% {
+        border-left: solid 3.5px rgb(255, 255, 255);
+ 
+    }
+ 
+    
+}
+.button_contato{
+    background-color: aqua;
+    box-shadow: 0px 0px 10px black;
+    animation-name: bordar-button;
+    animation-duration: 2s;
+    animation-iteration-count:infinite;
+}
+.button_github{
+    background-color: var(--color-text);
+    margin-right: 20px;
+}
