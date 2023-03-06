@@ -8,6 +8,18 @@
     box-sizing: border-box;
 
 }
+body::-webkit-scrollbar{
+    width: 18px;
+}
+body::-webkit-scrollbar-track {
+    border-radius: 35px;
+    color: black;
+}
+body::-webkit-scrollbar-thumb {
+    border-radius: 35px;
+    background-color: aqua;
+
+}
 body{
     background-color: var(--color-fundo);
 }

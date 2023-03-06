@@ -20,18 +20,32 @@
 .container_text_apresentaçao{
     position: absolute;
 }
+@keyframes cresce {
+    0% {
+       transform: scale(0);
+    }
+   
+    100% {
+       transform: scale(1);
+    }
+
+}
 
 
 
 .name{
     color: var(--color-text);
-    margin-top: 250px;
+    margin-top: 200px;
     font-size: 150px;
     font-family: 'Roboto', sans-serif;
     text-shadow: 0px 0px 10px rgb(14, 14, 14);
+    animation-name: cresce;
+    animation-duration: 1s;
 } 
 .name span {
     color: aqua;
+    animation-name: cresce;
+    animation-duration: 1s;
 }
 
 .container_text_apresentaçao .profissao{
@@ -41,10 +55,14 @@
     color: var(--color-text);
     margin-bottom: 20px;
     text-shadow: 0px 0px 10px rgb(14, 14, 14);
+    animation-name: cresce;
+    animation-duration: 1s;
 }
 .button_github, .button_contato{
     width: 150px;
     padding: 6px;
+    animation-name: cresce;
+    animation-duration: 1s;
 }
 .button_github a {
     text-decoration: none;
@@ -55,40 +73,50 @@
 }
 .button_contato a {
     font-size: 22px;
-    color: black;
+    color: aqua;
     text-decoration: none;
     font-family: 'Oswald', sans-serif;
+    transition: all ease 1;
+   
 }
 @keyframes bordar-button {
     0% {
-        border-top: solid 3.5px rgb(255, 255, 255);
+        border-top: solid 3.5px aqua;
  
     }
     25% {
     
-        border-right: solid 3.5px rgb(255, 255, 255);
+        border-right: solid 3.5px aqua;
  
        
         
     }
     50% {
        
-        border-bottom:  solid 3.5px rgb(255, 255, 255);
+        border-bottom:  solid 3.5px aqua;
  
     }
     75% {
-        border-left: solid 3.5px rgb(255, 255, 255);
+        border-left: solid 3.5px aqua;
  
+    }
+    100% {
+        border-top: solid 3.5px aqua;
+
     }
  
     
 }
+
 .button_contato{
-    background-color: aqua;
+    background-color: transparent;
     box-shadow: 0px 0px 10px black;
+    
     animation-name: bordar-button;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-iteration-count:infinite;
+  
+   
 }
 .button_github{
     background-color: var(--color-text);
