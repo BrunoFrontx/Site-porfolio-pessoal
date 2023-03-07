@@ -24,6 +24,7 @@ body{
     background-color: var(--color-fundo);
 }
 .container_cabeçalho{
+    width: auto;
     display: flex;
     justify-content: space-between;
     
@@ -32,7 +33,7 @@ body{
     margin-top: 22px;
 }
 .logo{
-    width: 150px;
+    width:150px;
   
 }
 .container_menu{

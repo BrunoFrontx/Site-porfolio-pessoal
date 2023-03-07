@@ -4,6 +4,7 @@
     --font-size : 20px;
 }
 .container_apresentaçao{
+    width: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -12,6 +13,7 @@
 }
 .container_imagem_fundo{
     margin-top: 10%;
+   
     
 }
 .container_imagem_fundo img {
@@ -35,12 +37,14 @@
 
 .name{
     color: var(--color-text);
-    margin-top: 200px;
-    font-size: 150px;
+    margin-top: 250px;
+    font-size: 100px;
     font-family: 'Roboto', sans-serif;
     text-shadow: 0px 0px 10px rgb(14, 14, 14);
     animation-name: cresce;
     animation-duration: 1s;
+    margin-left: auto;
+    margin-right: auto;
 } 
 .name span {
     color: aqua;
